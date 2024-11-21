@@ -1,0 +1,77 @@
+nmoscovi@unix1:~/357-assignment-5-NoahMoscovici $ valgrind --leak-check=yes ./httpd 1111
+==785== Memcheck, a memory error detector
+==785== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==785== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==785== Command: ./httpd 1111
+==785== 
+Listening on port: 1111
+==884== 
+==884== HEAP SUMMARY:
+==884==     in use at exit: 0 bytes in 0 blocks
+==884==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==884== 
+==884== All heap blocks were freed -- no leaks are possible
+==884== 
+==884== For lists of detected and suppressed errors, rerun with: -s
+==884== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==887== 
+==887== HEAP SUMMARY:
+==887==     in use at exit: 0 bytes in 0 blocks
+==887==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==887== 
+==887== All heap blocks were freed -- no leaks are possible
+==887== 
+==887== For lists of detected and suppressed errors, rerun with: -s
+==887== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1046== 
+==1046== HEAP SUMMARY:
+==1046==     in use at exit: 0 bytes in 0 blocks
+==1046==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==1046== 
+==1046== All heap blocks were freed -- no leaks are possible
+==1046== 
+==1046== For lists of detected and suppressed errors, rerun with: -s
+==1046== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1185== 
+==1185== HEAP SUMMARY:
+==1185==     in use at exit: 0 bytes in 0 blocks
+==1185==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==1185== 
+==1185== All heap blocks were freed -- no leaks are possible
+==1185== 
+==1185== For lists of detected and suppressed errors, rerun with: -s
+==1185== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1220== 
+==1220== HEAP SUMMARY:
+==1220==     in use at exit: 0 bytes in 0 blocks
+==1220==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==1220== 
+==1220== All heap blocks were freed -- no leaks are possible
+==1220== 
+==1220== For lists of detected and suppressed errors, rerun with: -s
+==1220== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1272== 
+==1272== HEAP SUMMARY:
+==1272==     in use at exit: 0 bytes in 0 blocks
+==1272==   total heap usage: 2 allocs, 2 frees, 688 bytes allocated
+==1272== 
+==1272== All heap blocks were freed -- no leaks are possible
+==1272== 
+==1272== For lists of detected and suppressed errors, rerun with: -s
+==1272== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+^C==785== 
+==785== Process terminating with default action of signal 2 (SIGINT)
+==785==    at 0x4F36690: __accept_nocancel (in /usr/lib64/libc-2.17.so)
+==785==    by 0x4022D4: accept_connection (in /home/nmoscovi/357-assignment-5-NoahMoscovici/httpd)
+==785==    by 0x4020A4: run_service (in /home/nmoscovi/357-assignment-5-NoahMoscovici/httpd)
+==785==    by 0x4021AB: main (in /home/nmoscovi/357-assignment-5-NoahMoscovici/httpd)
+==785== 
+==785== HEAP SUMMARY:
+==785==     in use at exit: 0 bytes in 0 blocks
+==785==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==785== 
+==785== All heap blocks were freed -- no leaks are possible
+==785== 
+==785== For lists of detected and suppressed errors, rerun with: -s
+==785== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
